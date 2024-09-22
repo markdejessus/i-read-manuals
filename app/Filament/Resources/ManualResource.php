@@ -17,6 +17,8 @@ class ManualResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationLabel = 'My Manuals';
+
     public static function form(Form $form): Form
     {
         return $form
