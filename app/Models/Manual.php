@@ -10,6 +10,14 @@ class Manual extends Model
 {
     use HasFactory;
     use HasUlids;
-    protected $guarded = [];
-}
 
+    protected $guarded = [];
+
+    // casts files to array
+    protected function casts(): array
+    {
+        return [
+            'files' => 'array',
+        ];
+    }
+}
